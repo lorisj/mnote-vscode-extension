@@ -1,0 +1,94 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "mnote",
+	"patterns": [
+		{
+			"name": "keyword.control.def",
+			"match": "(\\%def)\\(([^)]*)\\)",
+			"captures": {
+				"1": { "name": "keyword.control.def" },
+				"2": { "name": "entity.name.function.def" }
+			}
+		},
+		{
+			"name": "keyword.control.enum",
+			"match": "\\%enum"
+		},
+		{
+			"name": "keyword.control.i",
+			"match": "\\%i"
+		},
+		{
+			"name": "keyword.control.eq",
+			"match": "\\%eq"
+		},
+		{
+			"name": "keyword.control.neq",
+			"match": "\\%neq"
+		},
+		{
+			"name": "keyword.control.res",
+			"match": "(\\%res)\\(([^)]*)\\)",
+			"captures": {
+				"1": { "name": "keyword.control.res" },
+				"2": { "name": "entity.name.function.res" }
+			}
+		},
+		{
+			"name": "keyword.control.exp",
+			"match": "(\\%exp)\\(([^)]*)\\)",
+			"captures": {
+				"1": { "name": "keyword.control.exp" },
+				"2": { "name": "entity.name.function.exp" }
+			}
+		},
+		{
+			"name": "keyword.control.item",
+			"match": "\\%item"
+		},
+		{
+			"name": "markup.raw.latex",
+			"begin": "\\$",
+			"end": "\\$",
+			"patterns": [
+				{
+					"include": "text.tex.latex"
+				}
+			]
+		},
+		{
+			"name": "markup.raw.latex",
+			"begin": "\\$\\$",
+			"end": "\\$\\$",
+			"patterns": [
+				{
+					"include": "text.tex.latex"
+				}
+			]
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.mnote",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.mnote",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mnote",
+					"match": "\\\\."
+				}
+			]
+		}
+		
+	},
+	"scopeName": "source.mnote"
+}

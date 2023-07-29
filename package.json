@@ -1,0 +1,32 @@
+{
+  "name": "mblog-language-support",
+  "displayName": "mblog_language_support",
+  "description": "Adds intellisense for mnote files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "mnote",
+      "aliases": ["mnote", "mnote"],
+      "extensions": [".mnote"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "mnote",
+      "scopeName": "source.mnote",
+      "path": "./syntaxes/mnote.tmLanguage.json"
+    }],
+    "themes": [
+      {
+          "label": "My Custom Theme",
+          "uiTheme": "vs-dark",
+          "path": "./themes/custom-theme.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+    "name": "My Custom Theme",
+    "type": "dark",
+    "colors": {},
+    "tokenColors": [
+        {
+            "scope": "keyword.control.def",
+            "settings": {
+                "foreground":  "#FF8800"
+            }
+        },
+        {
+            "scope": "entity.name.function.def",
+            "settings": {
+                "foreground": "#E6A246"
+            }
+        },
+        {
+            "scope": "keyword.control.res",
+            "settings": {
+                "foreground": "#BC3BD1"
+            }
+        },
+        {
+            "scope": "entity.name.function.res",
+            "settings": {
+                "foreground": "#c883d4"
+            }
+        },
+        {
+            "scope": "keyword.control.enum",
+            "settings": {
+                "foreground": "#5ec6d1"
+            }
+        },
+        {
+            "scope": "keyword.control.exp",
+            "settings": {
+                "foreground": "#99F56E" 
+            }
+        },
+        {
+            "scope": "entity.name.function.exp",
+            "settings": {
+                "foreground": "#bcf7a1"
+            }
+        },
+        {
+            "scope": "keyword.control.i",
+            "settings": {
+                "foreground": "#6F97F8"
+            }
+        },
+        {
+            "scope": "keyword.control.eq",
+            "settings": {
+                "foreground": "#fdff9c"
+            }
+        },
+        {
+            "scope": "keyword.control.neq",
+            "settings": {
+                "foreground": "#f2f558"
+            }
+        },
+        {
+            "scope": "string.quoted.double",
+            "settings": {
+                "foreground": "#888888"
+            }
+        },
+        {
+            "scope": "string.quoted.single",
+            "settings": {
+                "foreground": "#888888"
+            }
+        },
+        {
+            "scope": "source.latex",
+            "settings": {
+                "foreground": "#888888"
+            }
+        }
+    ]
+}
