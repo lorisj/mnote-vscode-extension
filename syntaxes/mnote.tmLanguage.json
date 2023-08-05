@@ -27,6 +27,22 @@
 			"match": "\\%neq"
 		},
 		{
+			"name": "keyword.control.dl",
+			"match": "\\%dl"
+		},
+		{
+			"name": "keyword.control.pf",
+			"match": "\\%pf"
+		},
+		{
+			"name": "keyword.control.st",
+			"match": "(\\%st)\\(([^)]*)\\)",
+			"captures": {
+				"1": { "name": "keyword.control.st" },
+				"2": { "name": "entity.name.function.st" }
+			}
+		},
+		{
 			"name": "keyword.control.res",
 			"match": "(\\%res)\\(([^)]*)\\)",
 			"captures": {

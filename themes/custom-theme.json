@@ -34,6 +34,30 @@
             }
         },
         {
+            "scope": "keyword.control.pf",
+            "settings": {
+                "foreground": "#31f5b4"
+            }
+        },
+        {
+            "scope": "keyword.control.dl",
+            "settings": {
+                "foreground": "#fc4242"
+            }
+        },
+        {
+            "scope": "keyword.control.st",
+            "settings": {
+                "foreground":  "#f74020"
+            }
+        },
+        {
+            "scope": "entity.name.function.st",
+            "settings": {
+                "foreground": "#fa7a64"
+            }
+        },
+        {
             "scope": "keyword.control.exp",
             "settings": {
                 "foreground": "#99F56E" 
