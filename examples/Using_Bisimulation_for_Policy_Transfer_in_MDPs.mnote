@@ -1,0 +1,24 @@
+# Introduction
+This note summarizes the paper Using Bisimulation for Policy Transfer in MDPs by Pablo Samuel Castro and Doina Precup.
+
+
+# Prerequisites:
+
+Recall that 
+
+
+%def(Value_of_state)
+    For an MDP $(S,A,P,R)$, the value of a state $s \in S$ under a policy $\pi$ is defined as:
+    %neq
+        V^\pi (s) \eqdef \left\{\EV_{\pi} \left[ \sum_{t=0}^{\infty} \gamma^t R(s_t, a_t) \mid s_0 = s \right]\right\}
+    
+    Where $R(s_t, a_t)$ is the reward at time $t$ and $\gamma \in [0,1)$ is the discount factor.
+    (This essentially corresponds to the )
+
+%def(Action_value_function)
+    For an MDP $(S,A,P,R)$, the action-value function $Q^{*} : S \times A \rightarrow \R$ gives the optimum value 
+    %neq
+        Q^{*}(s,a) \eqdef R(s,a)
+    
+%neq
+    d_\sim \eqdef \text{Fixed point of }\max_{a \in A} (R(s,a) - R(s', a) + \gamma T_K(d)(P(s,a), P(s',a)))

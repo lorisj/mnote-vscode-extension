@@ -9,23 +9,53 @@
   "categories": [
     "Programming Languages"
   ],
+  "main": "./extension.js",
   "contributes": {
-    "languages": [{
-      "id": "mnote",
-      "aliases": ["mnote", "mnote"],
-      "extensions": [".mnote"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "mnote",
-      "scopeName": "source.mnote",
-      "path": "./syntaxes/mnote.tmLanguage.json"
-    }],
+    "languages": [
+      {
+        "id": "mnote",
+        "aliases": [
+          "mnote",
+          "mnote"
+        ],
+        "extensions": [
+          ".mnote"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mnote",
+        "scopeName": "source.mnote",
+        "path": "./syntaxes/mnote.tmLanguage.json"
+      }
+    ],
     "themes": [
       {
-          "label": "My Custom Theme",
-          "uiTheme": "vs-dark",
-          "path": "./themes/custom-theme.json"
+        "label": "My Custom Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/custom-theme.json"
+      }
+    ],
+    "configuration": {
+      "properties": {
+        "myExtension.token": {
+          "type": "string",
+          "default": "",
+          "description": "Your authentication token."
+        },
+        "myExtension.url": {
+          "type": "string",
+          "default": "",
+          "description": "The URL endpoint."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "myExtension.call_update",
+        "title": "Upload mnote database"
       }
     ]
   }

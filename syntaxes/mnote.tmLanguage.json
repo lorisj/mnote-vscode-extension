@@ -35,6 +35,14 @@
 			"match": "\\%pf"
 		},
 		{
+			"name": "keyword.control.cd",
+			"match": "\\%cd"
+		},
+		{
+			"name": "keyword.control.ccd",
+			"match": "\\%ccd"
+		},
+		{
 			"name": "keyword.control.st",
 			"match": "(\\%st)\\(([^)]*)\\)",
 			"captures": {

@@ -40,6 +40,18 @@
             }
         },
         {
+            "scope": "keyword.control.cd",
+            "settings": {
+                "foreground": "#428af5"
+            }
+        },
+        {
+            "scope": "keyword.control.ccd",
+            "settings": {
+                "foreground": "#428af5"
+            }
+        },
+        {
             "scope": "keyword.control.dl",
             "settings": {
                 "foreground": "#fc4242"
